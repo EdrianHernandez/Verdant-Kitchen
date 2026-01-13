@@ -1,15 +1,7 @@
 import React from 'react';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
-import { Plan } from './PlanSelector';
-import { Meal } from './WeeklyMenu';
 
-interface CartCounterProps {
-  plan: Plan;
-  boxCount: number;
-  items: Meal[];
-}
-
-export default function CartCounter({ plan, boxCount, items }: CartCounterProps) {
+export default function CartCounter({ plan, boxCount, items }) {
   const isComplete = boxCount === plan.mealsPerWeek;
   const progress = (boxCount / plan.mealsPerWeek) * 100;
   
