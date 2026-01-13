@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { ChefHat, Star, HelpCircle, Menu as MenuIcon, User } from 'lucide-react';
-import PlanSelector, { Plan } from './components/PlanSelector';
-import WeeklyMenu, { Meal } from './components/WeeklyMenu';
+import PlanSelector from './components/PlanSelector';
+import WeeklyMenu from './components/WeeklyMenu';
 import DeliveryCalendar from './components/DeliveryCalendar';
 import CartCounter from './components/CartCounter';
 
 // --- Mock Data ---
 
-export const PLANS: Plan[] = [
+export const PLANS = [
   {
     id: '2-person',
     title: '2 Person Plan',
@@ -37,7 +37,7 @@ export const PLANS: Plan[] = [
   }
 ];
 
-const MOCK_MEALS: Meal[] = [
+const MOCK_MEALS = [
   {
     id: 1,
     title: 'Honey Glazed Salmon',
@@ -113,18 +113,17 @@ const MOCK_MEALS: Meal[] = [
 ];
 
 export default function App() {
-  const [currentPlan, setCurrentPlan] = useState<Plan>(PLANS[1]);
-  const [boxItems, setBoxItems] = useState<Meal[]>([]);
-  const [deliveryDate, setDeliveryDate] = useState<Date | null>(null);
+  const [currentPlan, setCurrentPlan] = useState(PLANS[1]);
+  const [boxItems, setBoxItems] = useState([]);
+  const [deliveryDate, setDeliveryDate] = useState(null);
 
-  const toggleMeal = (meal: Meal) => {
+  const toggleMeal = (meal) => {
     setBoxItems(prev => {
       const exists = prev.find(m => m.id === meal.id);
       if (exists) {
         return prev.filter(m => m.id !== meal.id);
       }
       if (prev.length >= currentPlan.mealsPerWeek) {
-        // In a real app, this would show a toast
         alert("Your box is full! Remove a meal to add another.");
         return prev;
       }
