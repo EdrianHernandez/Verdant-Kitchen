@@ -1,12 +1,7 @@
 import React from 'react';
 import { Calendar as CalendarIcon, Truck } from 'lucide-react';
 
-interface DeliveryCalendarProps {
-  selectedDate: Date | null;
-  onSelectDate: (date: Date) => void;
-}
-
-export default function DeliveryCalendar({ selectedDate, onSelectDate }: DeliveryCalendarProps) {
+export default function DeliveryCalendar({ selectedDate, onSelectDate }) {
   // Generate next 14 days
   const dates = Array.from({ length: 5 }, (_, i) => {
     const d = new Date();
