@@ -1,24 +1,7 @@
 import React from 'react';
 import { Clock, Flame, Plus, Minus, Info } from 'lucide-react';
 
-export interface Meal {
-  id: number;
-  title: string;
-  subtitle: string;
-  calories: number;
-  time: string;
-  tags: string[];
-  image: string;
-}
-
-interface WeeklyMenuProps {
-  meals: Meal[];
-  boxItems: Meal[];
-  onToggle: (meal: Meal) => void;
-  maxItems: number;
-}
-
-export default function WeeklyMenu({ meals, boxItems, onToggle, maxItems }: WeeklyMenuProps) {
+export default function WeeklyMenu({ meals, boxItems, onToggle, maxItems }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
       {meals.map((meal) => {
