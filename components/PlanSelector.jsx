@@ -1,23 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 
-export interface Plan {
-  id: string;
-  title: string;
-  description: string;
-  pricePerServing: number;
-  mealsPerWeek: number;
-  servingsPerMeal: number;
-  image: string;
-}
-
-interface PlanSelectorProps {
-  plans: Plan[];
-  selectedPlan: Plan;
-  onSelect: (plan: Plan) => void;
-}
-
-export default function PlanSelector({ plans, selectedPlan, onSelect }: PlanSelectorProps) {
+export default function PlanSelector({ plans, selectedPlan, onSelect }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {plans.map((plan) => {
