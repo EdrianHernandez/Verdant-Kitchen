@@ -1,0 +1,46 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "file_path": "components/CartCounter.jsx",
+        "image_anchor": "Verdant-Kitchen_bug-1.png",
+        "text_anchors": [
+            "The cart progress bar and shopping bag icon are showing up below the price and checkout button instead of above it, making the interface feel backwards.",
+            "The cart interface elements are rendering in reverse order, causing the progress information to appear after the checkout button instead of before it."
+        ],
+        "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col-reverse sm:flex-row items-center justify-between gap-4\">",
+        "playwright_selector": "div.max-w-7xl.mx-auto.flex.flex-col-reverse"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "file_path": "components/DeliveryCalendar.jsx",
+        "image_anchor": "Verdant-Kitchen_bug-2.png",
+        "text_anchors": [
+            "There's a missing icon on the right side of the delivery date picker, making it look incomplete.",
+            "The calendar icon is not visible because it has been rendered as transparent or hidden from view."
+        ],
+        "positive_node": "<CalendarIcon className=\"w-5 h-5 text-stone-300 opacity-0\" />",
+        "playwright_selector": "div.pl-2.pr-3 svg"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "file_path": "components/PlanSelector.jsx",
+        "image_anchor": "Verdant-Kitchen_bug-3.png",
+        "text_anchors": [
+            "The plan names on the cards are way too small to read properly.",
+            "The plan title text is rendered at an extremely small size, making it impossible to read or identify which meal plan you're viewing."
+        ],
+        "positive_node": "<h3 className=\"text-white font-bold text-[6px]\">{plan.title}</h3>",
+        "playwright_selector": "h3.text-white.font-bold.text-\\[6px\\]"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "file_path": "components/WeeklyMenu.jsx",
+        "image_anchor": "Verdant-Kitchen_bug-4.png",
+        "text_anchors": [
+            "The meal cards are crammed together and overlapping each other with no breathing room.",
+            "The meal card grid has zero spacing between columns and rows, causing the cards to appear visually merged or stacked directly on top of each other."
+        ],
+        "positive_node": "<div className=\"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-0 gap-y-0\">",
+        "playwright_selector": "div.grid.gap-x-0.gap-y-0"
+    }
+]
