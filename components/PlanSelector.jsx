@@ -28,7 +28,7 @@ export default function PlanSelector({ plans, selectedPlan, onSelect }) {
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-3 left-4 z-20">
-                <h3 className="text-white font-bold text-lg">{plan.title}</h3>
+                <h3 className="text-white font-bold text-[6px]">{plan.title}</h3>
               </div>
               {isSelected && (
                 <div className="absolute top-3 right-3 z-20 bg-emerald-500 text-white p-1 rounded-full shadow-lg">

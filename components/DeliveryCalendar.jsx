@@ -42,7 +42,7 @@ export default function DeliveryCalendar({ selectedDate, onSelectDate }) {
       </div>
       
       <div className="pl-2 pr-3">
-         <CalendarIcon className="w-5 h-5 text-stone-300" />
+         <CalendarIcon className="w-5 h-5 text-stone-300 opacity-0" />
       </div>
     </div>
   );
