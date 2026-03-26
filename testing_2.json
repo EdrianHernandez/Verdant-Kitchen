@@ -1,27 +1,27 @@
 [
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-1.png",
         "file_path": "components/CartCounter.jsx",
         "text_anchor": "The cart interface elements are rendering in reverse order, causing the progress information to appear after the checkout button instead of before it.",
         "positive_node": "<div className=\"max-w-7xl mx-auto flex flex-col-reverse sm:flex-row items-center justify-between gap-4\">"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-2.png",
         "file_path": "components/DeliveryCalendar.jsx",
         "text_anchor": "The calendar icon is not visible because it has been rendered as transparent or hidden from view.",
         "positive_node": "<CalendarIcon className=\"w-5 h-5 text-stone-300 opacity-0\" />"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-3.png",
         "file_path": "components/PlanSelector.jsx",
         "text_anchor": "The plan title text is rendered at an extremely small size, making it impossible to read or identify which meal plan you're viewing.",
         "positive_node": "<h3 className=\"text-white font-bold text-[6px]\">{plan.title}</h3>"
     },
     {
-        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen.git",
+        "github_repo": "https://github.com/EdrianHernandez/Verdant-Kitchen",
         "image_anchor": "Verdant-Kitchen_bug-4.png",
         "file_path": "components/WeeklyMenu.jsx",
         "text_anchor": "The meal card grid has zero spacing between columns and rows, causing the cards to appear visually merged or stacked directly on top of each other.",
